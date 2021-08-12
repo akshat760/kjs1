@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tailwind.css" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/11ab0e7416.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>About Us</title>
+</head>
+<body onload="myfunction()">
+  <div id="loader"></div>
+
+ <!--- Header (Upper portion of the webpage that contains link to other pages.)-->
+ <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="home.php">
+        <img src="https://kristjayantischool.com/assets/images/logo-96x89.jpg" fill="none" stroke="currentColor" stroke-linecap="none" stroke-linejoin="round" stroke-width="2" class="w-17 h-17 text-white p-2 bg-grey-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Krist Jayanti School</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="home.php">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="about.html"><b><u>About</u></b></a>
+        <a class="mr-5 hover:text-gray-900" href="admission.html">Admission</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact Us</a>
+        <a class="mr-5 hover:text-gray-900" href="update.html">Updates</a>
+      </nav>
+      <button class="inline-flex items-center">        <style>
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+box-sizing: border-box;
+}
+
+.theme{
+align-items: center;
+}
+
+
+.theme-msg{
+align-items: center;
+padding-top: 15px;
+padding-left: 15px;
+}
+
+
+body.dark {
+background: #292C35;
+}
+
+.checkbox {
+opacity: 0;
+position: absolute;
+}
+
+
+.label {
+background-color: #111;
+border-radius: 50px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5px;
+position: relative;
+height: 26px;
+width: 50px;
+transform: scale(1.5);
+}
+
+.label .ball {
+justify-content: center;
+background-color: #fff;
+border-radius: 50%;
+position: absolute;
+top: 2px;
+left: 2px;
+height: 22px;
+width: 22px;
+transform: translateX(0px);
+transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+transform: translateX(24px);
+}
+
+
+.fa-moon {
+color: #f1c40f;
+}
+
+.fa-sun-o {
+color: #f39c12;
+}
+
+      </style>
+      <div class="theme">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fa fa-sun-o"></i>
+          <div class="ball"></div>
+      </label>
+      </div>
+  </div>
+  <script>
+   const chk = document.getElementById('chk');
+   chk.addEventListener('change', () => {
+ document.body.classList.toggle('dark');
+    });
+  </script>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <hr>
+
+  <!--About our school-->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/GiZqqTmVA6fAo5dCSuMdcZ9Za3n_gjdHKg9s6QMveXSpX3Ro2Hg40YBW31ZhsXfWLkxcUidlmyJ5c5mk=w768-h432-p-no-v0">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Front View Of School</h1>
+              <!--<p class="leading-relaxed"> "Here"  </p>--> <!-- Remove the comment tag and write something about school by replacing "Here".-->
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/p/AF1QipM3qg9v6bssMc4oJL03eM9gAS4Fp0xl0FwZu1v6=s1280-p-no-v1">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Side View Of School</h1>
+              <!--<p class="leading-relaxed"> "Here"  </p>--> <!-- Remove the comment tag and write something about school by replacing "Here".-->
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://kristjayantischool.com/assets/images/slide-img-1.gif">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Middle Stage Of School</h1>
+              <!--<p class="leading-relaxed"> "Here"  </p>--> <!-- Remove the comment tag and write something about school by replacing "Here".-->
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <center><h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">THE VISION & MISSION OF THE SCHOOL </h1></center>
+          <center><div class="h-1 w-20 bg-red-500 rounded"></div></center>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">To form an integrated person with the mission of establishing the reign of God, accepting the fatherhood of God and universal brotherhood.
+            To instill in our students the values love, truth, justice, forgiveness and tolerance and thereby become a channel of peace. To appreciate the Indian heritage and imbibe its culture and ethos for building a harmonious society, irrespective of faith, language, caste and sex. To awaken a sense of Eco consciousness and love for nature.Our target is education for all, especially for the poor and the marginalized, recognizing the face of Jesus in them. </p>
+            <br>
+            <center><p style="padding-top: 25px;"><img src="jesus.png"></p></center>
+      </div>
+      </div>
+    </div>
+  </section>
+ 
+ <!-- What people think about our school (Can be editted later) -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed text-lg">A great place to start learning with. The school also have well- trained teachers. The way of teaching is very interactive. We will let you know about the staff below.<br> Go scroll on!</p>
+            <span class="inline-block h-1 w-10 rounded bg-red-500 mt-8 mb-6"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Akshat Kala</h2>
+            <p class="text-gray-500">Website Designer</p>
+          </div>
+        </div>
+    </section>
+    <hr width="!2px">
+    
+ <!--Team (Staff of School)-->
+ <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">School teaching Staff</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We have well-trained/ quallified teachers. The whole staff is mentioned below.</p>
+      </div>
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="female.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Puja Verma</h2>
+              <p class="text-gray-500">Teacher For Computer Science</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://scontent.fagr1-2.fna.fbcdn.net/v/t1.6435-1/c0.0.160.160a/p160x160/65318372_2472517089465262_826132990835818496_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=7206a8&_nc_ohc=_9V17huEvoUAX9O7w5w&_nc_ht=scontent.fagr1-2.fna&tp=27&oh=77d8ea8d54d4cd34df6cacf2d2cbe9ea&oe=60CE2476">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Rajat Agarwal</h2>
+              <p class="text-gray-500">Teacher For Mathematics</p>
+              <p class="text-gray-500"> Class Teacher Of X</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="male.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Ravish Chaubey</h2>
+              <p class="text-gray-500">Teacher For Music</p>
+            </div>
+          </div>
+        </div>
+        <!-- You can add more people later...-->
+
+      </div>
+    </div>
+  </section>
+<hr style="border-top: 10px solid rgb(226, 105, 105);">
+     
+ <!--Team (Staff of School)-->
+ <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Website Controlling Staff</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Best Staff involved in controlling the functioning of website. Mail us at<a href="mailto:itzakshat706@gmail.com" style="color: blueviolet;"> itzakshat706@gmail.com </a> to report bugs found in the website.<br>Thank You.</p>
+    </div>
+    <div class="flex flex-wrap -m-2">
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="partner1.jpg">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Akshat Kala</h2>
+            <p class="text-gray-500">Programmer<br><a href="https://www.instagram.com/akshat_kala706/"><img src="ig.png" style="width: 25px; height: 25px;"></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="partner3.jfif">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Omkar Singh</h2>
+              <p class="text-gray-500">Content Developer<br><a href="https://www.instagram.com/omrathi420/"><img src="ig.png" style="width: 25px; height: 25px;"></a></p>
+            </div>
+          </div>
+      </div>
+
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="partner2.jpg">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Akanksha Kala</h2>
+            <p class="text-gray-500">Visual Designer<br><a href="https://www.instagram.com/_akanksha_kala_/"><img src="ig.png" style="width: 25px; height: 25px;"></a></p>
+          </div>
+        </div>
+    </div>
+        <!-- You can add more people later...-->
+
+    </div>
+  </div>
+ </section>
+    
+ <script>
+  var preload=document.getElementById('loader');
+  function myfunction(){
+        preload.style.display='none';
+        }
+ </script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+     crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+     crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script> 
+    
+</body>
+</html>

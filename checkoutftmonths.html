@@ -1,0 +1,177 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <title>Fee Payment For First 3 Months</title>
+    <base target="_self"> 
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+    <link href="tailwind.css" rel="stylesheet">
+     <script type="module">
+    import { Toast } from 'bootstrap.esm.min.js'
+
+    Array.from(document.querySelectorAll('.toast'))
+      .forEach(toastNode => new Toast(toastNode))
+  </script>
+  
+    <style>.container {
+    max-width: 960px;
+  }
+  
+  .lh-condensed { line-height: 1.25; }</style>
+  </head>
+  <body class="bg-light">
+    <!--Space for modal-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Other Payment Methods</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          We are working day/ night upon <B>Payment Methods</B> so that paying your ward's fees could become an easier task for you and you could pay it on time. We are sorry for you are unable to pay from you credit cards, debit cards etc. but we promise you it will soon be available.  
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+            View Available Payment Types
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="patymQR.html">Pay by scanning Qr Code</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Modal end-->
+    <div class="container">
+      <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="logokjs1.jpg" alt="Krist Jayanti School, Bariya" width="85" height="80" style="border-radius: 100px;">
+          <h2>Checkout form</h2>
+          <p class="lead">You are going to make your fee payment for first 3 monts of your session, make sure you enter your informations accurately and correctly.</p>
+      </div>
+      <div class="row">
+          <div class="col-md-4 order-md-2 mb-4">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="text-muted">Your cart</span>
+                  <span class="badge badge-secondary badge-pill">1</span>
+              </h4>
+              <ul class="list-group mb-3 sticky-top">
+                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                      <div>
+                          <h6 class="my-0">Product name</h6>
+                          <small class="text-muted"></small>
+                      </div>
+                      <span class="text-muted">Basic</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                      <span>Total (INR)</span>
+                      <strong>₹6,400</strong>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-8 order-md-1">
+              <h4 class="mb-3">Student's Information</h4>
+              <form class="needs-validation" novalidate="">
+                  <div class="row">
+                      <div class="col-md-6 mb-3">
+                          <label for="firstName">First name</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                          <div class="invalid-feedback"> Valid first name is required. </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                          <label for="lastName">Last name</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                          <div class="invalid-feedback"> Valid last name is required. </div>
+                      </div>
+                  </div>
+                  <hr class="mb-4">
+                  <h4 class="mb-3">Payment</h4>
+                  <div class="d-block my-3">
+                      <div class="custom-control custom-radio">
+                          <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" disabled>
+                          <label class="custom-control-label" for="credit">Credit card</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                          <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" disabled>
+                          <label class="custom-control-label" for="paypal">PayPal</label>
+                      </div>
+                      <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <u>Other Payment Methods </u>
+                      </a>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6 mb-3">
+                          <label for="cc-name">Name on card</label>
+                          <input type="text" class="form-control" id="cc-name" placeholder="">
+                          <small class="text-muted">Full name as displayed on card</small>
+                          <div class="invalid-feedback"> Name on card is required </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                          <label for="cc-number">Credit card number</label>
+                          <input type="text" class="form-control" id="cc-number" placeholder="">
+                          <div class="invalid-feedback"> Credit card number is required </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-3 mb-3">
+                          <label for="cc-expiration">Expiration</label>
+                          <input type="text" class="form-control" id="cc-expiration" placeholder="">
+                          <div class="invalid-feedback"> Expiration date required </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                          <label for="cc-cvv">CVV</label>
+                          <input type="text" class="form-control" id="cc-cvv" placeholder="">
+                          <div class="invalid-feedback"> Security code required </div>
+                      </div>
+                  </div>
+                  <hr class="mb-4">
+                  <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+              </form>
+          </div>
+      </div>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p class="mb-1">© 2021-2022 Krist Jayanti School, Bariya</p>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Privacy</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Support</a></li>
+              <a href="index.html">Return Home</a>
+          </ul>
+      </footer>
+  </div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+  
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation')
+  
+      // Loop over them and prevent submission
+      Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    }, false)
+  }())
+    </script>
+    
+  
+  
+  </body></html>

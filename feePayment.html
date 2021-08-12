@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='' rel='stylesheet'>
+  <style>
+    body {
+      background: #B1EA86;
+      padding: 30px 0
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .pricingTable {
+      text-align: center;
+      background: #fff;
+      margin: 0 -15px;
+      box-shadow: 0 0 10px #ababab;
+      padding-bottom: 40px;
+      border-radius: 10px;
+      color: #cad0de;
+      transform: scale(1);
+      transition: all .5s ease 0s
+    }
+
+    .pricingTable:hover {
+      transform: scale(1.05);
+      z-index: 1
+    }
+
+    .pricingTable .pricingTable-header {
+      padding: 40px 0;
+      background: #f5f6f9;
+      border-radius: 10px 10px 50% 50%;
+      transition: all .5s ease 0s
+    }
+
+    .pricingTable:hover .pricingTable-header {
+      background: #ff9624
+    }
+
+    .pricingTable .pricingTable-header i {
+      font-size: 50px;
+      color: #858c9a;
+      margin-bottom: 10px;
+      transition: all .5s ease 0s
+    }
+
+    .pricingTable .price-value {
+      font-size: 35px;
+      color: #ff9624;
+      transition: all .5s ease 0s
+    }
+
+    .pricingTable .month {
+      display: block;
+      font-size: 14px;
+      color: #cad0de
+    }
+
+    .pricingTable:hover .month,
+    .pricingTable:hover .price-value,
+    .pricingTable:hover .pricingTable-header i {
+      color: #fff
+    }
+
+    .pricingTable .heading {
+      font-size: 24px;
+      color: #ff9624;
+      margin-bottom: 20px;
+      text-transform: uppercase
+    }
+
+    .pricingTable .pricing-content ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px
+    }
+
+    .pricingTable .pricing-content ul li {
+      line-height: 30px;
+      color: #a7a8aa
+    }
+
+    .pricingTable .pricingTable-signup a {
+      display: inline-block;
+      font-size: 15px;
+      color: #fff;
+      padding: 10px 35px;
+      border-radius: 20px;
+      background: #ffa442;
+      text-transform: uppercase;
+      transition: all .3s ease 0s
+    }
+
+    .pricingTable .pricingTable-signup a:hover {
+      box-shadow: 0 0 10px #ffa442
+    }
+
+    .pricingTable.blue .heading,
+    .pricingTable.blue .price-value {
+      color: #4b64ff
+    }
+
+    .pricingTable.blue .pricingTable-signup a,
+    .pricingTable.blue:hover .pricingTable-header {
+      background: #4b64ff
+    }
+
+    .pricingTable.blue .pricingTable-signup a:hover {
+      box-shadow: 0 0 10px #4b64ff
+    }
+
+    .pricingTable.red .heading,
+    .pricingTable.red .price-value {
+      color: #ff4b4b
+    }
+
+    .pricingTable.red .pricingTable-signup a,
+    .pricingTable.red:hover .pricingTable-header {
+      background: #ff4b4b
+    }
+
+    .pricingTable.red .pricingTable-signup a:hover {
+      box-shadow: 0 0 10px #ff4b4b
+    }
+
+    .pricingTable.green .heading,
+    .pricingTable.green .price-value {
+      color: #40c952
+    }
+
+    .pricingTable.green .pricingTable-signup a,
+    .pricingTable.green:hover .pricingTable-header {
+      background: #40c952
+    }
+
+    .pricingTable.green .pricingTable-signup a:hover {
+      box-shadow: 0 0 10px #40c952
+    }
+
+    .pricingTable.blue:hover .price-value,
+    .pricingTable.green:hover .price-value,
+    .pricingTable.red:hover .price-value {
+      color: #fff
+    }
+
+    @media screen and (max-width:990px) {
+      .pricingTable {
+        margin: 0 0 20px
+      }
+    }
+  </style>
+  <script type='text/javascript' src=''></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+  <script type='text/javascript'
+    src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+  <script type='text/javascript'></script>
+  <title>Fee Payment</title>
+</head>
+
+<body style="padding-left: 10%; padding-right: 10%;">
+
+  <div class="demo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="pricingTable blue">
+            <div class="pricingTable-header">
+              <i class="fa fa-diamond"></i>
+              <div class="price-value"> ₹6,400.00 <span class="month">For First 3 Months of The Session</span> </div>
+            </div>
+            <h3 class="heading">Basic</h3>
+            <div class="pricing-content">
+              <ul>
+                <li><b>Tution Fees</b><b> : ₹3,690.00</b></li>
+                <li><b>Special Fees</b><b> : ₹2,000.00</b></li>
+                <li><b>Fee Book & Id Card</b><b> : ₹200.00</b></li>
+                <li><b>Computer Fees</b><b> : ₹210.00</b></li>
+                <li><b>Lab Fees</b><b> : ₹150.00</b></li>
+                <li><b>Smart Class Fees</b><b> : ₹150.00</b></li>
+              </ul>
+            </div>
+            <div class="pricingTable-signup">
+              <a href="checkoutftmonths.html">Proceed To Pay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pricingTable green">
+            <div class="pricingTable-header">
+              <i class="fa fa-briefcase"></i>
+              <div class="price-value"> ₹4,200.00 <span class="month">For 3 months</span> </div>
+            </div>
+            <h3 class="heading">Standard</h3>
+            <div class="pricing-content">
+              <ul>
+                <li><b>Tution Fees</b><b> : ₹3,690.00</b></li>
+                <li><b>Computer Fees</b><b> : ₹210.00</b></li>
+                <li><b>Lab Fees</b><b> : ₹150.00</b></li>
+                <li><b>Smart Class Fees</b><b> : ₹150.00</b></li>
+                <li style="color: white;"><b>..</b><b>..</b></li>
+                <li style="color: white;"><b>..</b><b>..</b></li>
+              </ul>
+            </div>
+            <div class="pricingTable-signup">
+              <a href="checkout3months.html">Proceed To Pay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pricingTable orange">
+            <div class="pricingTable-header">
+              <i class="fa fa-diamond"></i>
+              <div class="price-value"> ₹19,000.00 <span class="month">Whole Year</span> </div>
+            </div>
+            <h3 class="heading">Premium</h3>
+            <div class="pricing-content">
+              <ul>
+                <li><b>Tution Fees</b><b> : ₹14,760.00</b></li>
+                <li><b>Extra Fees For the First</b><b> : ₹2,200.00</b></li>
+                <li><b>Computer Fees</b><b> : ₹840.00</b></li>
+                <li><b>Lab Fees</b><b> : ₹600.00</b></li>
+                <li><b>Smart Class Fees</b><b> : ₹600.00</b></li>
+                <li style="color: white;"><b>..</b><b>..</b></li>
+              </ul>
+            </div>
+            <div class="pricingTable-signup">
+              <a href="checkoutannual.html">Proceed To Pay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
